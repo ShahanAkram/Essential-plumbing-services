@@ -50,7 +50,7 @@
     "@context": "https://schema.org",
     "@type": "PlumbingService",
     "name": "Essential Plumbing Services LLC",
-    "image": "https://images.unsplash.com/photo-1581578731548-c64695cc6952?auto=format&fit=crop&w=1200&q=80",
+    "image": "https://images.unsplash.com/photo-1607472586893-edb57bdc0e39?auto=format&fit=crop&w=1200&q=80",
     "@id": "https://essentialplumbing247.com",
     "url": "https://essentialplumbing247.com",
     "telephone": "(909) 272-6616",
@@ -191,12 +191,11 @@
   </header>
 
 
-  <!-- ==================== HERO SECTION ==================== -->
-  <section class="relative bg-brand-dark text-white overflow-hidden py-16 md:py-24 lg:py-28">
-    <!-- Subtle Background Glows -->
-    <div class="absolute -top-32 -left-32 w-96 h-96 bg-brand-primary/20 rounded-full blur-3xl"></div>
-    <div class="absolute -bottom-32 -right-32 w-96 h-96 bg-cyan-500/20 rounded-full blur-3xl"></div>
-    <div class="absolute inset-0 bg-[radial-gradient(#1e293b_1px,transparent_1px)] [background-size:24px_24px] opacity-30"></div>
+  <!-- ==================== HERO SECTION WITH REALISTIC PLUMBER BACKGROUND ==================== -->
+  <section class="relative bg-brand-dark text-white overflow-hidden py-16 md:py-24 lg:py-28 bg-[url('https://images.unsplash.com/photo-1607472586893-edb57bdc0e39?auto=format&fit=crop&w=1920&q=80')] bg-cover bg-center bg-no-repeat">
+    <!-- Dark Vignette & Gradient Overlay for Contrast -->
+    <div class="absolute inset-0 bg-gradient-to-r from-slate-950/95 via-slate-950/85 to-slate-900/80"></div>
+    <div class="absolute -top-32 -left-32 w-96 h-96 bg-brand-primary/30 rounded-full blur-3xl"></div>
 
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
       <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
@@ -204,7 +203,7 @@
         <!-- Hero Text Content -->
         <div class="lg:col-span-7 space-y-6 text-center lg:text-left">
           
-          <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-slate-800/80 border border-slate-700 text-xs md:text-sm font-semibold text-cyan-400">
+          <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-slate-900/90 border border-slate-700 text-xs md:text-sm font-semibold text-cyan-400 backdrop-blur-md">
             <i class="fa-solid fa-shield-halved text-brand-primary"></i>
             <span>Redlands' #1 Rated Family-Owned Plumber</span>
           </div>
@@ -219,19 +218,19 @@
 
           <!-- Key Highlights Pills -->
           <div class="grid grid-cols-2 sm:grid-cols-4 gap-3 pt-2 text-xs md:text-sm font-medium">
-            <div class="bg-slate-800/60 border border-slate-700/60 p-2.5 rounded-xl flex items-center justify-center lg:justify-start gap-2">
+            <div class="bg-slate-900/80 backdrop-blur-md border border-slate-700/80 p-2.5 rounded-xl flex items-center justify-center lg:justify-start gap-2">
               <i class="fa-solid fa-clock text-red-400"></i>
               <span>24/7 Emergency</span>
             </div>
-            <div class="bg-slate-800/60 border border-slate-700/60 p-2.5 rounded-xl flex items-center justify-center lg:justify-start gap-2">
+            <div class="bg-slate-900/80 backdrop-blur-md border border-slate-700/80 p-2.5 rounded-xl flex items-center justify-center lg:justify-start gap-2">
               <i class="fa-solid fa-hand-holding-dollar text-emerald-400"></i>
               <span>Free Estimates</span>
             </div>
-            <div class="bg-slate-800/60 border border-slate-700/60 p-2.5 rounded-xl flex items-center justify-center lg:justify-start gap-2">
+            <div class="bg-slate-900/80 backdrop-blur-md border border-slate-700/80 p-2.5 rounded-xl flex items-center justify-center lg:justify-start gap-2">
               <i class="fa-solid fa-house-chimney-user text-cyan-400"></i>
               <span>Family Owned</span>
             </div>
-            <div class="bg-slate-800/60 border border-slate-700/60 p-2.5 rounded-xl flex items-center justify-center lg:justify-start gap-2">
+            <div class="bg-slate-900/80 backdrop-blur-md border border-slate-700/80 p-2.5 rounded-xl flex items-center justify-center lg:justify-start gap-2">
               <i class="fa-solid fa-star text-amber-400"></i>
               <span>5-Star Rated</span>
             </div>
@@ -244,7 +243,7 @@
               <span>Call (909) 272-6616 Now</span>
             </a>
 
-            <a href="#quote" class="w-full sm:w-auto inline-flex items-center justify-center gap-2 bg-slate-800 hover:bg-slate-700 text-white font-bold text-base px-6 py-4 rounded-xl border border-slate-700 transition">
+            <a href="#quote" class="w-full sm:w-auto inline-flex items-center justify-center gap-2 bg-slate-900/80 hover:bg-slate-800 backdrop-blur-md text-white font-bold text-base px-6 py-4 rounded-xl border border-slate-700 transition">
               <i class="fa-solid fa-calendar-check text-brand-primary"></i>
               <span>Request Free Quote</span>
             </a>
@@ -260,7 +259,7 @@
 
         <!-- Quick Emergency Quote Box -->
         <div class="lg:col-span-5">
-          <div class="bg-white rounded-2xl p-6 sm:p-8 text-slate-800 shadow-2xl border border-slate-100 relative">
+          <div class="bg-white/95 backdrop-blur-md rounded-2xl p-6 sm:p-8 text-slate-800 shadow-2xl border border-slate-100 relative">
             <div class="absolute -top-3 right-6 bg-emerald-500 text-white text-xs font-bold uppercase tracking-wider px-3 py-1 rounded-full shadow">
               Fast 45-Min Arrival
             </div>
@@ -518,6 +517,63 @@
   </section>
 
 
+  <!-- ==================== REALISTIC PLUMBERS AT WORK GALLERY SECTION ==================== -->
+  <section class="py-16 bg-slate-900 text-white overflow-hidden">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center max-w-3xl mx-auto mb-12">
+        <span class="text-xs font-extrabold text-cyan-400 tracking-widest uppercase bg-slate-800 px-3 py-1 rounded-full">Licensed Professionals</span>
+        <h2 class="font-heading font-extrabold text-3xl sm:text-4xl mt-3">Our Plumbers In Action</h2>
+        <p class="text-slate-300 text-sm sm:text-base mt-2">Real master plumbers delivering top-quality repairs across Redlands and the Inland Empire.</p>
+      </div>
+
+      <!-- 4 Photo Grid Showcase -->
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+        
+        <!-- Photo 1: Technician inspecting pipes -->
+        <div class="relative group rounded-2xl overflow-hidden shadow-lg border border-slate-800">
+          <img src="https://images.unsplash.com/photo-1621905251189-08b45d6a269e?auto=format&fit=crop&w=800&q=80" alt="Professional Plumber Inspecting Pipes" class="w-full h-64 object-cover group-hover:scale-105 transition duration-500">
+          <div class="absolute inset-0 bg-gradient-to-t from-slate-950 via-transparent to-transparent opacity-80"></div>
+          <div class="absolute bottom-4 left-4 right-4">
+            <span class="text-[10px] font-bold uppercase tracking-wider text-cyan-400 bg-slate-900/80 px-2 py-0.5 rounded">Diagnostic Camera</span>
+            <p class="font-heading font-bold text-white text-sm mt-1">Precision Pipe Inspection</p>
+          </div>
+        </div>
+
+        <!-- Photo 2: Plumber with wrench -->
+        <div class="relative group rounded-2xl overflow-hidden shadow-lg border border-slate-800">
+          <img src="https://images.unsplash.com/photo-1542013936693-884638332954?auto=format&fit=crop&w=800&q=80" alt="Master Plumber with Professional Tools" class="w-full h-64 object-cover group-hover:scale-105 transition duration-500">
+          <div class="absolute inset-0 bg-gradient-to-t from-slate-950 via-transparent to-transparent opacity-80"></div>
+          <div class="absolute bottom-4 left-4 right-4">
+            <span class="text-[10px] font-bold uppercase tracking-wider text-emerald-400 bg-slate-900/80 px-2 py-0.5 rounded">Family Owned</span>
+            <p class="font-heading font-bold text-white text-sm mt-1">Master Plumbing Technicians</p>
+          </div>
+        </div>
+
+        <!-- Photo 3: Water Heater & Pipe Repair -->
+        <div class="relative group rounded-2xl overflow-hidden shadow-lg border border-slate-800">
+          <img src="https://images.unsplash.com/photo-1585704032915-c3400ca199e7?auto=format&fit=crop&w=800&q=80" alt="Water Heater Repair and Installation" class="w-full h-64 object-cover group-hover:scale-105 transition duration-500">
+          <div class="absolute inset-0 bg-gradient-to-t from-slate-950 via-transparent to-transparent opacity-80"></div>
+          <div class="absolute bottom-4 left-4 right-4">
+            <span class="text-[10px] font-bold uppercase tracking-wider text-amber-400 bg-slate-900/80 px-2 py-0.5 rounded">Tankless & Tank</span>
+            <p class="font-heading font-bold text-white text-sm mt-1">Water Heater Installation</p>
+          </div>
+        </div>
+
+        <!-- Photo 4: Hydro-jetting & Drain Work -->
+        <div class="relative group rounded-2xl overflow-hidden shadow-lg border border-slate-800">
+          <img src="https://images.unsplash.com/photo-1504328345606-18bbc8c9d7d1?auto=format&fit=crop&w=800&q=80" alt="Hydro-jetting and Drain Rooter Work" class="w-full h-64 object-cover group-hover:scale-105 transition duration-500">
+          <div class="absolute inset-0 bg-gradient-to-t from-slate-950 via-transparent to-transparent opacity-80"></div>
+          <div class="absolute bottom-4 left-4 right-4">
+            <span class="text-[10px] font-bold uppercase tracking-wider text-red-400 bg-slate-900/80 px-2 py-0.5 rounded">Heavy Duty</span>
+            <p class="font-heading font-bold text-white text-sm mt-1">Hydro-Jetting & Sewer Lining</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
   <!-- ==================== WHY CHOOSE US ==================== -->
   <section id="why-us" class="py-20 bg-white">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -612,7 +668,8 @@
         
         <div class="lg:col-span-6 relative">
           <div class="relative rounded-3xl overflow-hidden shadow-2xl">
-            <img src="https://images.unsplash.com/photo-1581578731548-c64695cc6952?auto=format&fit=crop&w=1000&q=80" alt="Essential Plumbing Services LLC Van & Plumber in Redlands CA" class="w-full h-96 object-cover">
+            <!-- Realistic Plumber Image in About section -->
+            <img src="https://images.unsplash.com/photo-1542013936693-884638332954?auto=format&fit=crop&w=1000&q=80" alt="Master Plumber Essential Plumbing Services LLC in Redlands CA" class="w-full h-[420px] object-cover">
             <div class="absolute inset-0 bg-gradient-to-t from-slate-950/80 via-transparent to-transparent"></div>
             <div class="absolute bottom-6 left-6 right-6 text-white">
               <p class="font-heading font-bold text-xl">1612 Independence Ave, Redlands, CA 92374</p>
