@@ -1245,17 +1245,54 @@
       modalBackdrop.classList.add('hidden');
     });
 
+    // Webhook Endpoint (all form submissions are sent here)
+    const WEBHOOK_URL = 'https://n8n.unitzero.tech/webhook/1ea344e5-2daa-43cd-a6ad-6869127e97fa';
+    const SOURCE_WEBSITE = 'https://essential-plumbing-services.vercel.app/';
+
+    async function sendToWebhook(payload, form) {
+      try {
+        await fetch(WEBHOOK_URL, {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify(payload)
+        });
+      } catch (err) {
+        console.error('Webhook submission failed:', err);
+      } finally {
+        showModal();
+        form.reset();
+      }
+    }
+
     // Form Submissions
     document.getElementById('hero-quote-form').addEventListener('submit', (e) => {
       e.preventDefault();
-      showModal();
-      e.target.reset();
+      const payload = {
+        form_name: 'hero-quote-form',
+        source_website: SOURCE_WEBSITE,
+        submitted_at: new Date().toISOString(),
+        name: document.getElementById('hero-name').value,
+        phone: document.getElementById('hero-phone').value,
+        service: document.getElementById('hero-service').value
+      };
+      sendToWebhook(payload, e.target);
     });
 
     document.getElementById('full-contact-form').addEventListener('submit', (e) => {
       e.preventDefault();
-      showModal();
-      e.target.reset();
+      const payload = {
+        form_name: 'full-contact-form',
+        source_website: SOURCE_WEBSITE,
+        submitted_at: new Date().toISOString(),
+        name: document.getElementById('contact-name').value,
+        phone: document.getElementById('contact-phone').value,
+        email: document.getElementById('contact-email').value,
+        zip: document.getElementById('contact-zip').value,
+        service: document.getElementById('contact-service').value,
+        message: document.getElementById('contact-message').value,
+        urgent: document.getElementById('urgent-check').checked
+      };
+      sendToWebhook(payload, e.target);
     });
   </script>
 
